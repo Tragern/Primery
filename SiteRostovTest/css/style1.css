@@ -1,0 +1,108 @@
+<style>
+
+	 #menu, #menu li {
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    #menu {
+
+        text-align: center;
+
+        background: #03658e;
+
+    }
+
+    #menu li{
+
+        display:inline-block;
+
+        text-align: center;
+
+        width: 20%; 
+
+    }
+
+    #menu a {
+
+        display: block;
+
+        padding: 5px 15px;
+
+        color: #fff;
+
+        font-size:150%;
+
+        text-decoration: none;
+
+    }
+
+    #menu a:hover {
+
+        background: #8AB8CC;
+
+    }
+h1 {
+font-family: arial;
+font-style: italic;
+font-variant: uppercase;
+}
+.sign {
+    float: left; 
+    border: 1px solid #333; 
+    padding: 7px; 
+    margin: 10px 0 5px 5px; 
+    background: #f0f0f0; 
+   }
+   .sign figcaption {
+    margin: 0 auto 5px; 
+   }
+   .gold {
+    float: left; 
+    border: 1px solid #333; 
+    padding: 7px;
+    margin: 10px 0 5px 5px; 
+    background: #f0f0f0; 
+   }
+   .gold figcaption {
+    margin: 0 auto 5px; 
+   }
+   .silver {
+    float: left; 
+    border: 1px solid #333;
+    padding: 7px; 
+    margin: 10px 0 5px 5px; 
+    background: #f0f0f0; 
+   }
+   .silver figcaption {
+    margin: 0 auto 5px; 
+   }
+  .bronze {
+    float: left; 
+    border: 1px solid #333; 
+    padding: 7px; 
+    margin: 10px 0 5px 5px;
+    background: #f0f0f0; 
+   }
+   .b figcaption {
+    margin: 0 auto 5px; 
+   }
+  a { 
+    text-decoration: none; 
+   } 
+  li {
+    list-style-type: none; 
+   }
+ 
+   .kartinka {
+    float:left; 
+    margin: 7px 7px 7px 0; 
+   }
+   .kartinka  {
+    float: right; 
+    margin: 7px 0 7px 7px; 
+   }
+ </style>

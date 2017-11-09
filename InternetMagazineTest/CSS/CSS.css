@@ -1,0 +1,19 @@
+h1 {
+	font-family: Lobster, cursive;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bolder;
+	font-size: 30px;
+	}
+
+body {
+	background-image: url(../IMG/17.jpg);
+}
+
+caption {
+	background-image: url(../IMG/16.png);
+	}
+
+table {
+	background-image: url(../IMG/15.jpg);
+	}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+ <link rel="stylesheet" type="text/css" href="CSS/CSS.css" />
+	</head>
+<body>
+	
+	
+<p><input type="text" id="p1">ФИО:</input></p>
+	<p><input type="text" id="p2">Паспортные данные:</input></p>
+	<p><input type="text" id="p3">Почтовый адрес:</input></p>
+	<p><input type="text" id="p4">Индекс:</input></p>
+	<p><input type="text" id="p5">Кому:</input></p>
+	<p><input type="text" id="p6">От кого:</input></p>
+	<input type="text" id="p7">E-mail:</input></p>
+	<textarea id="r" value=" " rows="10" cols="100">Проверьте информацию</textarea>
+	
+	<input type="button" value="сформировать" onClick="f()"/>
+	<br>	<br>	<br>
+	<input type="text" id="sendTextWin"/>
+	
+	<script type="text/javascript">
+	document.getElementById("sendTextWin").value=window.opener.document.getElementById("summ").value;
+	function f() {
+	s=""
+	for (i=1; i<=4;i++) {
+	s+=document.getElementById('p'+i).value+"\n"
+	}
+	s+="Сумма заказа\n"
+	s+=window.opener.document.getElementById("summ").value;
+	document.getElementById("r").value=s
+	}
+	
+	</script>
+	</body>
+</html>

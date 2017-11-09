@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'>
+    <head><title>Отправка почты</title>
+     <link rel="stylesheet" type="text/css" href="CSS/CSS.css" />
+	<script>
+   function mes_go() {
+     var form   = document.forms.mess,
+    nomail = form.m_to.value.indexOf('@') == -1,
+         notext = !form.let.value,
+      xtext  = "\nПисьмо не отправлено";
+      if (nomail || notext) {
+       if (nomail)
+        alert("Неправильный адрес получателя" + xtext);
+       else
+            alert("Поле сообщения пусто" + xtext)
+     } 
+else{
+          window.open("mailto:" + form.m_to.value+'?body='+form.let.value, '_blank');
+       }
+return false;
+ }
+    </script>
+   </head>
+ <body>
+  <form name="mess" method="POST" enctype="text/plain">
+   <p>Кому: <input name="m_to" type="text" value=""></p>
+  <p>От кого: <input name="m_from" type="text" value=""></p>
+   <p>Сообщение:<br>
+    <textarea name="let" value="" rows="4" cols="40"></textarea></p>
+  <p><input name="subm" type="submit" value="Oтправить" onClick="mes_go()"></p>
+ </form>
+ </body>
+</html>

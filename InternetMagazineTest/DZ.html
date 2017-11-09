@@ -1,0 +1,68 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Таблица размеров обуви</title>
+ <link rel="stylesheet" type="text/css" href="CSS/CSS.css" />
+ </head>
+ <body>
+  <table border="1" width="70%" align="center">
+   <caption><h1>Товары</h1></caption>
+   <tr>
+    <th>Книга</th>
+    <th>Информация</th>
+    <th>Цена</th>
+    <th>Количество</th>
+   </tr>
+   <tr><td width="15%"><img src="IMG/1.JPG" height="100%" width="100%"></td><td width="15%"><h3 align="center">Новая книга Юрия Полякова – увлекательные истории из жизни...</h3></td><td width="15%"><h3 align="center">499</h3></td><td width="15%"><input type="text" value="0" id="p1"/></td></tr>
+   <tr><td><img src="IMG/2.JPG" height="100%" width="100%"></td><td><h3 align="center">В центре повествования этой, подчас шокирующей,<br> резкой и болевой книги – Женщина.</h3></td><td><h3 align="center">600</h3></td><td><input type="text" value="0" id="p2"/></td></tr>
+   <tr><td><img src="IMG/3.JPG" height="100%" width="100%"></td><td><h3 align="center">В романе соединились ироничная романтика, магический реализм,<br> 
+   сказки и факты, история любви длинною <br>в жизнь и история двадцатого века.</h3></td><td><h3 align="center">570</h3></td><td><input type="text" value="0" id="p3"/></td></tr>
+   <tr><td><img src="IMG/4.JPG" height="100%" width="100%"></td><td><h3 align="center">Предлагаем вашему вниманию новинку серии "Полный курс" авторства<br>
+   опытных преподавателей Розы Гонсалес и Рушании Алимовой.</h3></td><td><h3 align="center">800</h3></td><td><input type="text" value="0" id="p4"/></td></tr>
+   <tr><td><img src="IMG/13.jfif" height="100%" width="100%"></td><td><h3 align="center">В этой книге рассказывается история Дома Романовых,<br> правивших Россией более 300 лет.</h3></td><td><h3 align="center">400</h3></td><td><input type="text" value="0" id="p5"/></td></tr>
+   <tr><td><img src="IMG/6.jfif" height="100%" width="100%"></td><td><h3 align="center">Книга рассказывает о плодотворном творческом содружестве Саввы Морозова<br> с выдающимся архитектором Фёдором Шехтелем<br> и,
+   в частности, о выстроенном им в 1893 году особняке,<br> известном как один из красивейших в России.</h3></td><td><h3 align="center">950</h3></td><td><input type="text" value="0" id="p6"/></td></tr>
+   <tr><td><img src="IMG/7.JPG" height="100%" width="100%"></td><td><h3 align="center">Размышления Брюса Ли, собранные из его дневников и записей.</h3></td><td><h3 align="center">399</h3></td><td><input type="text" value="0" id="p7"/></td></tr>
+   <tr><td><img src="IMG/8.jfif" height="100%" width="100%"></td><td><h3 align="center">Химия - волшебная наука. Без какого-либо преувеличения волшебная,<br>
+   поскольку она изучает превращения одних веществ в другие.</h3></td><td><h3 align="center">405</h3></td><td><input type="text" value="0" id="p8"/></td></tr>
+   <tr><td><img src="IMG/9.JPG" height="100%" width="100%"></td><td><h3 align="center">Новый роман Галины Долговой «Герцогиня.<br>
+   Выбор императора» - захватывающее романтическое фэнтези с элементами детектива.</h3></td><td><h3 align="center">410</h3></td><td><input type="text" value="0" id="p9"/></td></tr>
+   <tr><td><img src="IMG/10.JPG" height="100%" width="100%"></td><td><h3 align="center">В учебном пособии раскрываются основные понятия психологической науки,<br>
+   освещаются ее важнейшие проблемы и методы.</h3></td><td><h3 align="center">420</h3></td><td><input type="text" value="0" id="p10"/></td></tr>
+   <tr><td><img src="IMG/11.jfif" height="100%" width="100%"></td><td><h3 align="center">Вы хотели бы отправиться в далёкое и опасное путешествие по удивительной Африке?<br>
+   Погрузиться в тайны и загадки Древнего Египта?</h3></td><td><h3 align="center">910</h3></td><td><input type="text" value="0" id="p11"/></td></tr>
+   <tr><td><img src="IMG/12.jfif" height="100%" width="100%"></td><td><h3 align="center">В сборник вошли - "Медной горы хозяйка", "Малахитовая шкатулка", "Синюшкин колодец".</h3></td><td><h3 align="center">71</h3></td><td><input type="text" value="0" id="p12"/></td></tr>
+
+  </table>
+   <script type="text/javascript">
+ var m= [499,600,570,800,400,950,399,405,410,420,910,71,440,299,500,230,245,140,270,210,480];
+  function calk() {
+  s=0;
+  for(i = 0; i < 12; i++){
+j=i+1;
+
+if(document.getElementById("p"+j).value!="0"){
+s=s+document.getElementById("p"+j).value*m[i];}
+}
+document.getElementById("summ").value=String(s);}
+var res,send,win,i=1;
+	function send() {
+		
+		send = document.getElementById("summ").value;
+		
+		win = window.open("h1.html","TestWin");	
+		setTimeout(sendInInput, 1000);
+	}
+	function sendInInput () {
+		win.document.getElementById("sendTextWin").value = "Принято: " + send;
+	}
+
+	
+  </script>
+  <input type="button" value="Рассчитать" onClick="calk()"></input>
+
+  <input type="text" id="summ" value=" "></input><br>
+ <input type="button" value="Заказать и передать" onClick="send()"></input>
+  <input type="button" value="Заказать и взять" onClick="win = window.open('h1.html','TestWin')"></input>
+ </body>
+</html>
